@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>hometask-js-02</title>
+</head>
+<body>
+	<script>
+	;(function(){
+
+ 	function showNumber() {
+        var number = prompt("Введите число больше 1: ", '');
+
+        step:
+            for (var i = 2; i < number; i++) {
+
+                for (var j = 2; j < i; j++) {
+                    if (i % j == 0) continue step;
+                }
+
+                alert(i);
+            }
+    }
+    showNumber();
+
+	})();
+		
+	</script>
+
+</body>
+</html>
+
